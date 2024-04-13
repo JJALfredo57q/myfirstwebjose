@@ -1,0 +1,29 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.background2 {
+    background-color: lightslategray;
+
+}
+
+.topbar {
+    height: 30px;
+    background-color: rgb(77, 240, 126);
+    position: absolute;
+    
+
+}
+
+
+.leftbar {
+    margin-top: 20px;
+    width: 100px;
+    height: 100vh;
+    background-color: aqua;
+    overflow-y: hidden
+    
+}
+

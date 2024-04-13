@@ -1,0 +1,197 @@
+* {
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+
+
+.container1{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    background-color: rgba(211, 193, 193, 0);
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    
+    
+    
+    
+    
+}
+
+.Background-clip {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    position: fixed;
+}
+
+    
+
+
+.start1 {
+    height: 25px;
+    width: 50px;
+    border-radius: 10px;
+    background-color: rgb(134, 134, 134,0);
+    border: solid;
+    border-color: aliceblue;
+    transition: 1s;
+    color: aliceblue;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.start1:hover {
+    background-color: aliceblue;
+    color: rgb(0, 0, 0);
+    font-size: 14px;
+    
+
+}
+.audio1 {
+    display: flex;
+    justify-content: center;
+    height: 24px;
+    width: 300px;
+    margin-top: 30px;
+    
+    
+}
+
+
+
+.content {
+    font-size: 10px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    
+    
+
+}
+
+.Wellcome{
+    font-size: 60px;
+    text-align: center;
+    color: aliceblue;
+
+}
+
+
+.tobla {
+    background-color: none;
+    height: 20px;
+    width: 70px;
+    
+    
+    
+
+
+}
+
+.buttontop1 {
+    background-color: rgba(255, 255, 255, 0.37);
+    height: 20px;
+    width: 20px;
+    cursor: pointer;
+    transition: 1s;
+    overflow: hidden;
+    color: rgba(255, 255, 255, 0.00);
+    text-align: left;
+    border-radius: 10px;
+    margin: 10px;
+    border: solid;
+    border-color: black;
+    padding-left: 6px;
+
+}
+
+.buttontop1:hover {
+    width: 170px;
+    color: rgb(255, 255, 255);
+    text-align: left;
+    border-radius: 5px;
+
+}
+.buttonhaha {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+
+}
+
+.container2 {
+    background-color: aqua;
+    height: 700px;
+    width: 100%;
+    align-items:start;
+    justify-content: center;
+    display:flex;
+    margin-top: 50px;
+    
+    
+    
+    
+}
+
+.content44 {
+    margin-top: 20px;
+    
+    background-color: azure;
+    width: 80%;
+    border-radius: 20px;
+    box-shadow: 10px 10px 30px 10px rgb(0, 0, 0, 0.23);
+    display: block;
+   
+
+}
+
+.content444 {
+    margin-top: 20px;
+    height: 250px;
+    background-color: azure;
+    width: 80%;
+    display:flex;
+    border-radius: 20px;
+    justify-content: space-between;
+    box-shadow: 10px 10px 30px 10px rgb(0, 0, 0, 0.23);
+    grid-template-columns: 1fr 1fr 1fr;
+    
+    
+}
+
+.picture222 {
+    width: 80%;
+    background-color: brown;
+    margin: 20px;
+    display: inline-block;
+}
+
+.content4444 {
+    background-color: lightgreen;
+    display: flex;
+    
+    
+    
+}
+
+
+
+@media(min-aspect-ratio:18/10) {
+    .Background-clip{
+        height: auto;
+        width:100%;
+    }
+}
+
+
+
+@media(max-aspect-ratio:18/10) {
+    .Background-clip{
+        height: 100%;
+        width: auto;
+    }
+}

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login Page</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  .container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .form-group {
+    margin-bottom: 20px;
+  }
+
+  .form-group label {
+    display: block;
+    margin-bottom: 5px;
+  }
+
+  .form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+
+  .form-group input[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .form-group input[type="submit"]:hover {
+    background-color: #0056b3;
+  }
+
+  .error {
+    color: red;
+    font-size: 14px;
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+  <h2>Login</h2>
+  <form id="loginForm">
+    <div class="form-group">
+      <label for="phone">Phone Number:</label>
+      <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required placeholder="Enter your phone number">
+    </div>
+    <div class="form-group">
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required placeholder="Enter your password">
+    </div>
+    <div class="form-group">
+      <input type="submit" value="Login">
+    </div>
+    <div class="error" id="errorMessage"></div>
+  </form>
+</div>
+
+<script>
+document.getElementById("loginForm").addEventListener("submit", function(event) {
+  event.preventDefault(); // Prevent the form from submitting
+
+  // Get the input values
+  var phone = document.getElementById("phone").value;
+  var password = document.getElementById("password").value;
+
+  // Here you would typically perform an AJAX request to a server to validate the login credentials
+  // For this example, we'll just do a basic client-side validation
+
+  // Simple validation: Check if phone and password are not empty
+  if (phone === "999" && password === "123") {
+    document.getElementById("errorMessage").textContent = "Please enter both phone number and password.";
+  } else {
+    // If validation passes, clear any previous error message
+    document.getElementById("errorMessage").textContent = "";
+
+    // You can add your login logic here
+    // For now, we'll just simulate a successful login and redirect to another website
+    // In a real-world scenario, you would verify the credentials against a database
+    // and then redirect accordingly
+    // For demonstration, we'll redirect to the OpenAI homepage
+    window.location.href = "https://openai.com";
+  }
+})
+</script>
+
+</body>
+</html>
